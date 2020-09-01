@@ -1,0 +1,12 @@
+- block:
+  - pause:
+      prompt: "Give your secret code for Odoo ee download"
+    register: prompt
+    no_log: yes
+    run_once: yes
+
+  - name: Install a .deb package from the internet.
+    apt:
+      deb: "https://libs.websoft9.com/apps/Odoo/{{ prompt.user_input | b64encode }}/odoo_{{odoo_version}}_e_latest_all.deb"
+      autoclean: yes
+    when: odoo_distribution == "ee"

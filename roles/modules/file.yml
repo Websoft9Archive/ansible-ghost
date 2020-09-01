@@ -1,0 +1,23 @@
+- name: Create knowage directory
+  file:
+    path: /data/wwwroot/knowage
+    state: directory
+    owner: knowage
+    group: knowage
+
+
+# 删除目录，下载解压，重命名
+# if [ ! d "scratch-gui*") ] 这种写法当不存在需要更名的目录的时候会报错，弃用
+- name: Remove extra dir
+  shell: rm -rf /data/wwwroot/scratch
+
+- name: Download Scratch
+  unarchive:
+    src: "{{scratch_download_url}}"
+    dest: /data/wwwroot
+    remote_src: yes
+
+- name: Rename dir name
+  shell: if [ $( ls | grep "scratch-gui") ]; then mv scratch-gui* scratch; fi
+  args:
+  chdir: /data/wwwroot
