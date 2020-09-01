@@ -1,15 +1,15 @@
 #1 Prepare
+- name: Create Ghost User
+  user:
+    name: ghost
+    shell: /usr/sbin/nologin
+    
 - name: Create Ghost directory
   file:
     path: /data/wwwroot/ghost
     state: directory
     owner: ghost
     group: ghost
-
-- name: Create Ghost User
-  user:
-    name: ghost
-    shell: /usr/sbin/nologin
 
 #2 Install
 - name: Install this role on {{ansible_os_family}}
