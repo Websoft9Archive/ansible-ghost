@@ -8,7 +8,7 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/), it can 
 
 [Ghost](https://ghost-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of Ghost world-wide at small startups and large enterprises, Ghost is the most popular open source message broker.
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghost-gui-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-ui-websoft9.png)
 
 ---
 
