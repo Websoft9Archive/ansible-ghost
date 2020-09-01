@@ -10,8 +10,8 @@ Ghost 预装包包含 Ghost 运行所需一序列支撑软件（简称为“组�
 
 ### Ghost
 
-Ghost 安装目录： */data/ghost*  
-Ghost 日志目录： */data/logs/ghost*  
+Ghost 安装目录： */data/wwwroot/ghost*  
+Ghost 日志目录： */data/wwwroot/ghost/content/*  
 
 ### Nginx
 
@@ -25,7 +25,6 @@ Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
 MySQL 安装路径: */usr/local/mysql*  
 MySQL 数据文件 */data/mysql*  
 MySQL 配置文件: */etc/my.cnf*    
-MySQL 可视化管理地址: *http://服务器公网IP/phpmyadmin*，用户名和密码请见 [账号密码](/zh/stack-accounts.md) 章节。
 
 ## 端口号
 
@@ -35,9 +34,10 @@ MySQL 可视化管理地址: *http://服务器公网IP/phpmyadmin*，用户名�
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
-| HTTP | 15672 | 通过 HTTP 访问 Ghost 控制台 | 可选 |
-| TCP | 5672 | epmd | 可选 |
-| TCP | 55672 | Erlang distribution | 可选 |
+| HTTP | 80 | 通过 HTTP 访问 Ghost | 可选 |
+| HTTP | 443 | 通过 HTTPS 访问 Ghost | 可选 |
+| TCP | 9090 | 数据库可视化管理工具 phpMyAdmin | 可选 |
+| TCP | 3306 | 本地数据库客户端访问数据库 | 可选 |
 
 ## 版本号
 
@@ -53,16 +53,12 @@ lsb_release -a
 # Nginx  Version
 nginx -V
 
-# Java version
-java -v
+# Node version
+node -v
 
 # Docker Version
 docker -v
 
-# erlang  Version
-yum info erlang
-apt show erlang
-
-# Ghost version
-ghostctl status | grep Ghost*
+# MySQL  Version
+mysql -V
 ```

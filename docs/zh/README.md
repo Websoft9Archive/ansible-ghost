@@ -6,9 +6,9 @@ home: false
 
 本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Ghost 的安装部署与基本运维技术，包括：Ghost部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
 
-[Ghost](https://www.ghost.com) 流行的开源消息队列系统，用erlang语言开，是AMQP（高级消息队列协议）的标准实现。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗。
+[Ghost](https://ghost.org) 是一个开源的博客系统，界面简洁、现代、美观，代码优雅。其核心理念是帮助知识创业者以订阅的方式向读者出售知识。系统采用 Node.js 开发，前端和后端完全分离，运行速度非常快。
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghost-gui-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghostui.jpg)
 
 ---
 

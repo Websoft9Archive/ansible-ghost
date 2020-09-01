@@ -8,8 +8,7 @@
 
 ## Ghost
 
-* 管理员账号: `admin`
-* 管理员密码: `admin` 或 存储在您的服务器中的文件中 */credentials/password.txt*  
+本地浏览器访问：*http://服务器公网IP/ghost* 自行设置
 
 ## MySQL
 

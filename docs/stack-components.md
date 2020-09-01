@@ -50,16 +50,12 @@ lsb_release -a
 # Nginx  Version
 nginx -V
 
-# Java version
-java -v
+# Node version
+node -v
 
 # Docker Version
 docker -v
 
-# erlang  Version
-yum info erlang
-apt show erlang
-
-# Ghost version
-ghostctl status | grep Ghost*
+# MySQL  Version
+mysql -V
 ```
