@@ -1,17 +1,17 @@
 # FAQ
 
-#### 如何以调试模式启动RabbitMQ服务？
+#### 如何以调试模式启动Ghost服务？
 
 ```
-systemctl stop rabbitmq-server
-rabbitmq-server console
+systemctl stop ghost-server
+ghost-server console
 ```
 
-#### 是否可以通过命令行修改RabbitMQ后台密码？
+#### 是否可以通过命令行修改Ghost后台密码？
 
-可以，`rabbitmqctl change_password  admin newpassword`
+可以，`ghostctl change_password  admin newpassword`
 
-#### 如果没有域名是否可以部署 RabbitMQ？
+#### 如果没有域名是否可以部署 Ghost？
 
 可以，访问`http://服务器公网IP` 即可
 
@@ -27,7 +27,7 @@ rabbitmq-server console
 
 连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
 
-#### 是否可以修改RabbitMQ的源码路径？
+#### 是否可以修改Ghost的源码路径？
 
 不可以
 

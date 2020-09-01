@@ -1,17 +1,17 @@
 # Start or Stop the Services
 
-These commands you must know when you using the RabbitMQ of Websoft9
+These commands you must know when you using the Ghost of Websoft9
 
-### RabbitMQ
+### Ghost
 
 ```shell
-sudo systemctl start rabbitmq-server
-sudo systemctl stop rabbitmq-server
-sudo systemctl restart rabbitmq-server
-sudo systemctl status rabbitmq-server
+sudo systemctl start ghost-server
+sudo systemctl stop ghost-server
+sudo systemctl restart ghost-server
+sudo systemctl status ghost-server
 
-# you can use this debug mode if RabbitMQ service can't run
-rabbitmq-server console
+# you can use this debug mode if Ghost service can't run
+ghost-server console
 ```
 
 ### MySQL

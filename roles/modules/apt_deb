@@ -1,7 +1,0 @@
-#指定deb在线安装,效果== $ wget https://packages.graylog2.org/repo/packages/graylog-3.3-repository_latest.deb
-#                     $ sudo dpkg -i graylog-3.3-repository_latest.deb
-- name: Install Graylog
-  apt:
-    deb: "{{graylog_deb_url}}"
-    state: present
-    update_cache: yes
