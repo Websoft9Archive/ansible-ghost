@@ -17,7 +17,7 @@
 
 - name: Copy docker-compose.yml
   template:
-    src: docker-compose.yml
+    src: docker-compose.yml.jinja2
     dest: /data/ghost/docker-compose.yml
 
 - name: Run docker-compose
