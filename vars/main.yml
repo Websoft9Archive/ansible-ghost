@@ -3,14 +3,9 @@ region: "0"
 
 common_os_support: ["CentOS", "Ubuntu", "Amazon", "OracleLinux"]
 
-# rabbitmq variable
+nginx_certbot: True
 
-rabbitmq_db_name: rabbitmq
-rabbitmq_db_user: rabbitmq
-rabbitmq_db_password: "123456"
-
-preend_certbot: True
-nginx_reverse_proxy_port: "8065"
+nginx_reverse_proxy_port: "2368"
 
 # role_mysql
 mysql_version: "5.7"       
@@ -18,30 +13,29 @@ mysql_root_password: "123456"
 mysql_remote: True
 
 # docker
-docker_applications: 'phpmyadmin'
+docker_applications: 
+  - phpmyadmin
 
 # add databases and users
 mysql_databases:
- - name: rabbitmq
+ - name: ghost
  
 mysql_users:
- - name: rabbitmq
+ - name: ghost
    host: localhost
-   priv: 'rabbitmq.*:ALL'
+   priv: 'ghost.*:ALL'
 
 # init passsword of database
 init_db: 
     mysql:
-      user: root
+      admin: root
+      user: ["ghost"]
       password: "123456"  
   
 # init password of applications
-init_application:
-  rabbitmq:
-    service: rabbitmq
-    database: rabbitmq 
-    database_user: rabbitmq
-    database_host: localhost
-    database_password: "123456"
-    config_path:
-      - /opt/rabbitmq/config/config.json
+init_docker:
+  ghost:
+    service_after: "docker.service"
+    compose_path: "/data/docker-compose.yml"
+    compose_commands:
+      - 'sed -i "s/DB_ROOT_PASSWD=.*/DB_ROOT_PASSWD=$new_password/g" /data/ghost/docker-compose.yml'
