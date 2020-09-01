@@ -25,7 +25,7 @@
     docker-compose up -d 
     sleep 30s
   args:
-    chdir: /data/ghost
+    chdir: /data/wwwroot/ghost
 
 #3 Configure
 
