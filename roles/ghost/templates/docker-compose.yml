@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  ghost:
+    container_name: ghost
+    image: ghost:latest
+    restart: always
+    ports:
+      - 2368:2368
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - /data/wwwroot/ghost/content:/var/lib/ghost/content
+      - /data/wwwroot/ghost/config.production.json:/var/lib/ghost/config.production.json
