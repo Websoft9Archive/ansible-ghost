@@ -15,10 +15,13 @@
 - name: Install this role on {{ansible_os_family}}
   include: "{{ansible_os_family}}.yml"
 
-- name: Copy docker-compose.yml
+- name: Copy docker-compose.yml and config.production.json
   template:
-    src: docker-compose.yml
-    dest: /data/wwwroot/ghost/docker-compose.yml
+    src: "{{item}}"
+    dest: /data/wwwroot/ghost/{{item}}
+  loop:
+    - docker-compose.yml
+    - config.production.json
 
 - name: Run docker-compose
   shell: |
