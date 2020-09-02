@@ -34,3 +34,7 @@
 
 
 #4 Verify
+- name: Check Ghost Version
+  shell: |
+    sudo echo -e "node_version: `docker exec -it ghost /bin/bash -c 'node -v'`\n" |sudo tee -a /data/logs/install_version.txt
+    sudo echo -e "ghost_version: `docker exec -it ghost /bin/bash -c 'ls versions'`\n" |sudo tee -a /data/logs/install_version.txt
