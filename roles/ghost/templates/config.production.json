@@ -17,6 +17,7 @@
   },
   
   "mail": {
+      "from": "help@websoft9.com",
       "transport": "SMTP",
       "options": {
           "service": "Mailgun",
