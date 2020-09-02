@@ -4,7 +4,7 @@ ghost_volume: "/data/wwwroot/ghost/content"
 
 
 ghost_db_client: mysql
-ghost_db_host: localhost
+ghost_db_host: "172.17.0.1"
 ghost_db_user: root
 ghost_db_password: "123456"
 ghost_db_database: ghost
