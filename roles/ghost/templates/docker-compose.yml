@@ -7,7 +7,7 @@ services:
     image: ghost:latest
     restart: always
     ports:
-      - 2368:2368
+      - {{ghost_port}}:2368
     environment:
       - NODE_ENV=production
     volumes:
