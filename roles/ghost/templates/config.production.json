@@ -1,7 +1,7 @@
 {
   "url": "http://localhost:2368",
   "server": {
-    "port": {{ghost_port}},
+    "port": 2368,
     "host": "0.0.0.0"
   },
   
