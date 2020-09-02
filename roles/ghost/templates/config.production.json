@@ -17,7 +17,17 @@
   },
   
   "mail": {
-    "transport": "Direct"
+      "transport": "SMTP",
+      "options": {
+          "service": "Mailgun",
+          "host": "smtp.eu.mailgun.org",
+          "port": 465,
+          "secureConnection": true,
+          "auth": {
+              "user": "postmaster@example.mailgun.org",
+              "pass": "1234567890"
+          }
+      }
   },
   
   "logging": {
