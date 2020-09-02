@@ -1,25 +1,34 @@
 {
   "url": "http://localhost:2368",
   "server": {
-    "port": 2368,
+    "port": {{ghost_port}},
     "host": "0.0.0.0"
   },
+  
   "database": {
-    "client": "sqlite3",
+    "client": "{{ghost_db_client}}",
     "connection": {
-      "filename": "/var/lib/ghost/content/data/ghost.db"
+      "host": "{{ghost_db_host}}",
+      "port": 3306,
+      "user": "{{ghost_db_user}}",
+      "password": "{{ghost_db_password}}",
+      "database": "{{ghost_db_database}}"
     }
   },
+  
   "mail": {
     "transport": "Direct"
   },
+  
   "logging": {
     "transports": [
       "file",
       "stdout"
     ]
   },
+  
   "process": "systemd",
+  
   "paths": {
     "contentPath": "/var/lib/ghost/content"
   }
