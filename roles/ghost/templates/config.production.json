@@ -17,16 +17,15 @@
   },
   
   "mail": {
-      "from": "help@websoft9.com",
-      "transport": "SMTP",
+      "transport": "SMTP", 
+      "from": "2932546975@qq.com",
       "options": {
-          "service": "Mailgun",
-          "host": "smtp.eu.mailgun.org",
+          "host": "smtp.qq.com",
           "port": 465,
           "secureConnection": true,
           "auth": {
-              "user": "postmaster@example.mailgun.org",
-              "pass": "1234567890"
+              "user": "2932546975@qq.com",
+              "pass": "yourpassword**"
           }
       }
   },
