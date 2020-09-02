@@ -1,11 +1,10 @@
 # FAQ
 
-#### 如何以调试模式启动Ghost服务？
+#### Ghost 系统中的 Post 与 Page 有什么区别？
 
-```
-systemctl stop ghost-server
-ghost-server console
-```
+Post 是文章的意思，每一篇博客文章即一个 Post；Page 是页面的意思，网站中的首页，公司介绍等都可称之为 Page。  
+
+在 Ghost 系统中，没一个新建的 Page，都需要在主题中有对应的模板文件与之匹配。
 
 #### 是否可以通过命令行修改Ghost后台密码？
 
