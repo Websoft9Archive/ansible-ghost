@@ -11,16 +11,34 @@
 ## Ghost 安装向导
 
 1. 使用本地电脑的 Chrome 或 Firefox 浏览器访问网址：*http://域名* 或 *http://Internet IP*, 进入前台界面
-   ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghost-bootpage-websoft9.png)
+   ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-bootpage-websoft9.png)
 
 2. 访问网址：*http://域名/ghost* 或 *http://Internet IP/ghost*, 进入后台
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghost-bk-websoft9.png)
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-register001-websoft9.png)
 
-3. 开始创建直接的管理员账号
+3. 开始创建管理员账号，以邮箱地址为用户名，密码不要设置过于简单  
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-register002-websoft9.png)
 
-4. 修改 Nginx 虚拟主机配置文件，绑定域名
+4. 使用 SFTP工具连接服务器，修改 [Nginx 虚拟主机](/zh/stack-components.md#nginx)配置文件，绑定域名（如果想采用域名，此步骤必做）
+   ```
+    listen 80;
+    server_name ghost.yourdomain.com;
+   ```
 
-5. 修改 Ghost 容器编排文件中的域名地址
+5. 使用 SFTP工具连接服务器，修改 [Ghost 容器编排文件](/zh/stack-components.md#ghost)中的 URL 域名地址（同上）
+   ```
+   {
+   "url": "http://ghost.yourdomain.com",
+   "server": {
+      "port": 2368,
+      "host": "0.0.0.0"
+   },
+   ```
+7. 运行相关命令，重启以下服务后以上设置才生效
+   ```
+   sudo systemctl restart nginx
+   cd /data/wwwroot/ghost && sudo docker-compose up -d && sudo docker restart ghost
+   ```
 
 > 需要了解更多 Ghost 的使用，请参考官方文档：[Ghost Documentation](https://docs.ghost.org/docs)
 
