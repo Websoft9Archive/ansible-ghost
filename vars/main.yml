@@ -5,6 +5,8 @@ common_os_support: ["CentOS", "Ubuntu", "Amazon", "OracleLinux"]
 
 nginx_certbot: True
 
+nginx_appname: "ghost"
+nginx_vhost_mode: "reverse"
 nginx_reverse_proxy_port: "2368"
 
 # role_mysql

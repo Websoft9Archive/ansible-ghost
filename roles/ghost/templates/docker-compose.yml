@@ -11,5 +11,5 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - /data/wwwroot/ghost/content:/var/lib/ghost/content
+      - {{ghost_volume}}:/var/lib/ghost/content
       - /data/wwwroot/ghost/config.production.json:/var/lib/ghost/config.production.json

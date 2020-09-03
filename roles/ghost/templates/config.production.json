@@ -1,5 +1,5 @@
 {
-  "url": "http://localhost:2368",
+  "url": "{{ghost_url}}",
   "server": {
     "port": 2368,
     "host": "0.0.0.0"
@@ -9,7 +9,7 @@
     "client": "{{ghost_db_client}}",
     "connection": {
       "host": "{{ghost_db_host}}",
-      "port": 3306,
+      "port": "{{ghost_db_port}}",
       "user": "{{ghost_db_user}}",
       "password": "{{ghost_db_password}}",
       "database": "{{ghost_db_database}}"
@@ -17,16 +17,15 @@
   },
   
   "mail": {
-      "from": "help@websoft9.com",
-      "transport": "SMTP",
+      "transport": "SMTP", 
+      "from": "2932546975@qq.com",
       "options": {
-          "service": "Mailgun",
-          "host": "smtp.eu.mailgun.org",
+          "host": "smtp.qq.com",
           "port": 465,
           "secureConnection": true,
           "auth": {
-              "user": "postmaster@example.mailgun.org",
-              "pass": "1234567890"
+              "user": "2932546975@qq.com",
+              "pass": "yourpassword**"
           }
       }
   },
