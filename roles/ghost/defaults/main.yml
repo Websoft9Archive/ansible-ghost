@@ -1,5 +1,5 @@
 ghost_port: "2368"
-ghost_url: "http://www.yourdomain.com:2368"
+ghost_url: "http://www.yourdomain.com"
 ghost_volume: "/data/wwwroot/ghost/content"
 
 
