@@ -1,5 +1,5 @@
 {
-  "url": "http://www.yourdomain.com",
+  "url": "{{ghost_url}",
   "server": {
     "port": 2368,
     "host": "0.0.0.0"
@@ -9,7 +9,7 @@
     "client": "{{ghost_db_client}}",
     "connection": {
       "host": "{{ghost_db_host}}",
-      "port": 3306,
+      "port": {{ghost_db_port}},
       "user": "{{ghost_db_user}}",
       "password": "{{ghost_db_password}}",
       "database": "{{ghost_db_database}}"
