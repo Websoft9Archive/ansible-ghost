@@ -1,5 +1,5 @@
 {
-  "url": "{{ghost_url}",
+  "url": "{{ghost_url}}",
   "server": {
     "port": 2368,
     "host": "0.0.0.0"
