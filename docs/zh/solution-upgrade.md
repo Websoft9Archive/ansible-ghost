@@ -24,4 +24,20 @@ yum update -y --skip-broken
 
 ## Ghost升级
 
-详情参考官方升级文档：[Upgrading Ghost](https://www.ghost.com/upgrade.html)
+不部署采用 Docker 安装 Ghost，官方提供的通过 node 升级 Ghost 不适用。
+
+请按照下面的流程完成升级：
+
+1. 手工[备份 Ghost](/zh/solution-backup.md#程序手工备份)，一定要确保万无一失
+2. 登录云服务器，分别运行下面的命令
+   ```
+   #停止并删除现有的 Ghost 容器
+   sudo docker stop ghost && sudo docker rm ghost
+
+   #删除本地 Ghost 镜像
+   docker image rm ghost
+
+   #重新运行容器
+   cd /data/wwwroot/ghost && docker-compose up -d
+   ```
+3. 本地浏览器重新访问 Ghost，开始升级
