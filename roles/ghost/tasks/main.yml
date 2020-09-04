@@ -33,6 +33,7 @@
 #3 Configure
 - name: Permission settings
   shell: |
+    chown -R ghost.ghost /data/wwwroot/ghost
     find /data/wwwroot/ghost -type d -exec chmod 750 {} \;
     find /data/wwwroot/ghost -not -type d -exec chmod 640 {} \;
 
