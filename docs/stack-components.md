@@ -58,4 +58,10 @@ docker -v
 
 # MySQL  Version
 mysql -V
+
+# Node  Version
+sudo docker exec -it ghost /bin/bash -c 'node -v'
+
+# Ghost version
+sudo docker exec -it ghost /bin/bash -c 'ls versions'
 ```

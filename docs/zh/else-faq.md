@@ -1,18 +1,30 @@
 # FAQ
 
+#### Ghost 支持中文吗？
+
+Ghost 的后台不支持中文，但是前台支持中文（需主题中有中文）
+
 #### Ghost 系统中的 Post 与 Page 有什么区别？
 
 Post 是文章的意思，每一篇博客文章即一个 Post；Page 是页面的意思，网站中的首页，公司介绍等都可称之为 Page。  
 
-在 Ghost 系统中，没一个新建的 Page，都需要在主题中有对应的模板文件与之匹配。
+在 Ghost 系统中，每一个新建的 Page，都需要在主题中有对应的模板文件与之匹配。
+
+#### Ghost 是否支持对默认主题 casper 进行修改？
+
+不支持，只可以修改自上传的主题。
 
 #### 是否可以通过命令行修改Ghost后台密码？
 
-可以，`ghostctl change_password  admin newpassword`
+不可以
 
 #### 如果没有域名是否可以部署 Ghost？
 
 可以，访问`http://服务器公网IP` 即可
+
+#### 设置域名访问？
+
+首先要解析域名，然后登录服务完成[域名绑定操作](/zh/solution-more.md#域名绑定)
 
 #### 数据库 root 用户对应的密码是多少？
 
@@ -24,20 +36,20 @@ Post 是文章的意思，每一篇博客文章即一个 Post；Page 是页面�
 
 #### 如何禁止外界访问phpMyAdmin？
 
-连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
+云控制台安全组中关闭 9090 端口即可
 
-#### 是否可以修改Ghost的源码路径？
+#### 是否可以修改Ghost目录路径？
 
-不可以
+可以，通过修改 Ghost 容器编排文件： */data/wwwroot/ghost/docker-compose.yml* 中的持久化目录实现
 
 #### 如何修改上传的文件权限?
 
 ```shell
 # 拥有者
-chown -R apache.apache /data/wwwroot/
+chown -R root.root /data/wwwroot/ghost
 # 读写执行权限
-find /data/wwwroot/ -type d -exec chmod 750 {} \;
-find /data/wwwroot/ -type f -exec chmod 640 {} \;
+find /data/wwwroot/ghost -type d -exec chmod 750 {} \;
+find /data/wwwroot/ghost -type f -exec chmod 640 {} \;
 ```
 
 #### 部署和安装有什么区别？

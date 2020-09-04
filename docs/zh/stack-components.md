@@ -10,8 +10,9 @@ Ghost 预装包包含 Ghost 运行所需一序列支撑软件（简称为“组�
 
 ### Ghost
 
-Ghost 安装目录： */data/wwwroot/ghost*  
-Ghost 日志目录： */data/wwwroot/ghost/content/*  
+Ghost 安装目录： */data/wwwroot/ghost/content*  
+Ghost 配置文件： */data/wwwroot/ghost/config.production.json*  
+Ghost 容器编排文件： */data/wwwroot/ghost/docker-compose.yml*  
 
 ### Nginx
 
@@ -25,6 +26,20 @@ Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
 MySQL 安装路径: */usr/local/mysql*  
 MySQL 数据文件 */data/mysql*  
 MySQL 配置文件: */etc/my.cnf*  
+
+### phpMyAdmin
+
+采用容器的方式运行 phpMyAdmin， 环境与 Ghost 容器隔离，稳定可靠。  
+
+访问方式： *http://服务器公网IP：9090*
+
+
+### Docker
+
+Docker 根目录: */var/lib/docker*  
+Docker 镜像目录: */var/lib/docker/image*   
+Docker daemon.json 文件：默认没有创建，请到 */etc/docker* 目录下根据需要自行创建   
+
 
 ## 端口号
 
@@ -61,4 +76,10 @@ docker -v
 
 # MySQL  Version
 mysql -V
+
+# Node  Version
+sudo docker exec -it ghost /bin/bash -c 'node -v'
+
+# Ghost version
+sudo docker exec -it ghost /bin/bash -c 'ls versions'
 ```

@@ -5,13 +5,21 @@ These commands you must know when you using the Ghost of Websoft9
 ### Ghost
 
 ```shell
-sudo systemctl start ghost-server
-sudo systemctl stop ghost-server
-sudo systemctl restart ghost-server
-sudo systemctl status ghost-server
+sudo docker stop ghost
+sudo docker start ghost
+sudo docker restart ghost
 
-# you can use this debug mode if Ghost service can't run
-ghost-server console
+# you can use the following CMD to manage Ghost container
+sudo docker exec -it ghost /bin/bash
+```
+
+### Nginx
+
+```shell
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
 ```
 
 ### MySQL
@@ -23,11 +31,10 @@ sudo systemctl restart mysql
 sudo systemctl status mysql
 ```
 
-### Redis
+### phpMyAdmin
 
 ```shell
-sudo systemctl start redis
-sudo systemctl stop redis
-sudo systemctl restart redis
-sudo systemctl status redis
+sudo docker stop phpmyadmin
+sudo docker start phpmyadmin
+sudo docker restart phpmyadmin
 ```

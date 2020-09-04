@@ -21,13 +21,10 @@ df -lh
 free -lh
 
 # 查看服务状态和日志
-systemctl status ghost
-journalctl -u ghost
+sudo docker ps
+sudo docker logs ghost
 ```
 
-#### 在Chrome下修改密码后报错？
+#### 无法打开默认主题 casper 文件夹？
 
-这个并不是服务器端的问题，只要更新浏览器即可。
-
-![chrome error of Ghost](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghost-chromeerror-websoft9.png)
-
+官方表示，casper 是内核的组成部分，仅自上传的主题方可修改。

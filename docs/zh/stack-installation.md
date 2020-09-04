@@ -25,7 +25,7 @@
     server_name ghost.yourdomain.com;
    ```
 
-5. 使用 SFTP工具连接服务器，修改 [Ghost 容器编排文件](/zh/stack-components.md#ghost)中的 URL 域名地址（同上）
+5. 使用 SFTP工具连接服务器，修改 [Ghost 配置文件](/zh/stack-components.md#ghost)中的 URL 域名地址（同上）
    ```
    {
    "url": "http://ghost.yourdomain.com",

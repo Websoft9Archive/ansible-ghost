@@ -1,4 +1,4 @@
-# CLI
+# Personalization
 
 Use `ghostctl` to manage Ghost  
 
