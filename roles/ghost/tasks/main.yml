@@ -31,7 +31,10 @@
     chdir: /data/wwwroot/ghost
 
 #3 Configure
-
+- name: Permission settings
+  shell: |
+    find /data/wwwroot/ghost -type d -exec chmod 750 {} \;
+    find /data/wwwroot/ghost -not -type d -exec chmod 640 {} \;
 
 #4 Verify
 - name: Check Ghost Version
