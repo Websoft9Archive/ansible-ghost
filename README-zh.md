@@ -1,5 +1,5 @@
 
-# Ghost 自动化安装与部署
+# Ghost 自动化安装与部署12
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
