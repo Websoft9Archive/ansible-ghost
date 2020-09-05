@@ -27,7 +27,7 @@ Yes, phpMyAdmin is on it, visit by *http://Internet IP:9090*
 
 No
 
-#### How to change the permissions of filesytem?
+#### How to change the permissions of filesystem?
 
 Change owner(group) or permissions like below:
 
