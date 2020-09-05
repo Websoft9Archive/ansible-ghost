@@ -1,5 +1,5 @@
   
-# 核心任务  test111
+# 核心任务 
 
 - name: Ghost
   hosts: all
