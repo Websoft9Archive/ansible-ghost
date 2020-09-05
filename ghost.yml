@@ -1,5 +1,5 @@
   
-# 核心任务
+# 核心任务  test
 
 - name: Ghost
   hosts: all
