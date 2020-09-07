@@ -1,4 +1,4 @@
-# FAQ
+# FAQ1
 
 #### How can I enable the debug mode of Ghost service?
 
