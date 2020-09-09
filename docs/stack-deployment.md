@@ -1,32 +1,32 @@
 # Deployment
 
-**Deployment is to copy the Ghost pre-packaged online to your Cloud Server**. For example, after the user subscribe Ghost on the Cloud Platform, the Platform will automatically copy the Ghost to the corresponding Cloud Server.
+**Deployment is to copy the pre-installed Ghost package online to your Cloud Server**. For example, after the user subscribes Ghost on the Cloud Platform, the Platform will automatically copy the Ghost to the corresponding Cloud Server.
 
-- If Ghost has been deployed, go to [Initial Installation](/zh/stack-installation.md) to complete the operation.
-- If Ghost is not deployed, you need to deploy Ghost to your cloud server first.
+- If you have deployed the Ghost, go to [Initial Installation](/stack-installation.md) to complete the operation.
+- If Ghost is not deployed, first you need to deploy Ghost to your cloud server .
 
-We offer two deployment Ghost scenarios (the deployment results are the same):
+We offer two scenarios for Ghost deployment and the results are the same. The process of deployment is automatic, please wait after starting deployment.
 
 ## Deploy by Image
 
-**Deploy by Image** means starting instance from Ghost images. **Ghost Image** provide OS and software environment needed for Ghost.
+**Deploying by Image** means starting instance based on Ghost images, so as to obtain the same system environment as the image contains. **Ghost Image** provides OS and software environment needed for Ghost.
 
-For users with experience with cloud servers, Deploy by Image equated with "one-click deployment".
+For users with experience with cloud servers, to deploy by Image means "one-click deployment".
 
-Websoft9 published [Ghost image](https://apps.websoft9.com/ghost) on Cloud Platform, three methods for your deployment:
+Websoft9 publishes [Ghost image](https://apps.websoft9.com/ghost) on major Cloud Platforms. Cloud Platforms offer the following three methods to deploy image. 
 
-* When **Create New Instance** , select the Ghost image as the system boot template.
-* When **Subscribe Ghost** on Marketplace, the system will promote you to create a new instance for this image at the same time.
-* When **Re-install OS** for you instance, you can replace the existing image with a Ghost image.
+* When **creating New Instance** , select the Ghost image as the system boot template.
+* When **subscribing Ghost** at Marketplace, the system will promote you to create a new instance for this image at the same time.
+* When **re-installing OS** for you instance, you can replace the existing image with a Ghost image.
 
 ## Deploy by Script
 
-**Deploy by Script** means running a script on your cloud instance to pull the pre-packages online to your instance and configure it at the same time.
+**Deploying by Script** means running a script on your cloud instance to pull the pre-installed package online to your instance and configure it at the same time.
 
-Websoft9 provide the [Ghost ansbile automation script](https://github.com/Websoft9/ansible-ghost) on Github. If you are familiar with Ansible, you can deploy the Ghost to the instance automaticly.
+Websoft9 provides the [Ghost ansible automation script](https://github.com/Websoft9/ansible-ghost) on GitHub. If you are familiar with Ansible, you can deploy the Ghost to the instance automatically.
 
 ## Comparison
 
-Although the results of the **deploy by image** are consistent with the results of **deploy by script**, what is the difference between the two deployment methods?
+No matter you **deploy by image** or **deploy by script**, the results are the same. So, what is the difference between the two deployment methods?
 
-Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison)
+Suggest to read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison)

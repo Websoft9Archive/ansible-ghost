@@ -34,7 +34,7 @@
       "host": "0.0.0.0"
    },
    ```
-7. 运行相关命令，重启以下服务后以上设置才生效
+6. 运行相关命令，重启以下服务后以上设置才生效
    ```
    sudo systemctl restart nginx
    cd /data/wwwroot/ghost && sudo docker-compose up -d && sudo docker restart ghost

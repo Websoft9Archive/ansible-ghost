@@ -59,9 +59,9 @@ sidebarDepth: 3
 2. 登录 Ghost 后台，导出数据
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-exportalldatas-websoft9.png)
 
-2. 通过 phpMyAdmin 逐个导出数据库
+3. 通过 phpMyAdmin 逐个导出数据库
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/mysql/phpmyadmin-export-websoft9.png)
 
-3. 将程序文件和数据库文件放到同一个文件夹，根据日期命名
+4. 将程序文件和数据库文件放到同一个文件夹，根据日期命名
 
-4. 备份工作完成
+5. 备份工作完成

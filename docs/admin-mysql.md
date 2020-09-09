@@ -9,4 +9,4 @@ Ghost deployment package includes MySQL and Web-GUI tool phpMyAdmin for MySQL ma
 4. Start to manage MySQL now.
   ![phpMyadmin](https://libs.websoft9.com/Websoft9/DocsPicture/en/phpmyadmin/phpmyadmin-createdb-websoft9.png)
 
-> View *[MySQL guide](https://support.websoft9.com/docs/mysql/admin-phpmyadmin.html)* provided by Websoft9 to acquire more useful skills of MySQL, including: how to change password, create user, import/export data, open or close remote access, log configuration and so on.
+> View *[MySQL guide](https://support.websoft9.com/docs/mysql/admin-phpmyadmin.html)* provided by Websoft9 to acquire more useful skills of MySQL, including: how to change password, create user, import/export data, open or close remote access, configure log and so on.

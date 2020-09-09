@@ -1,19 +1,20 @@
 # Update & Upgrade
 
-Updates and upgrades are one of the maintenance tasks for sytem. Programs that are not upgraded for a long time, like buildings that are not maintained for a long time, will accelerate aging and gradually lose functionality until they are unavailable.
+Updates and upgrades are the tasks for system maintenance. Like buildings without maintenance for a long time, programs without upgrading will age faster, lose functionality until they are unavailable.
 
-You should know the differences between the terms **Update** and **Upgrade**([Extended reading](https://support.websoft9.com/docs/faq/tech-upgrade.html#update-vs-upgrade))
-- Operating system patching is **Update**, Ubuntu16.04 to Ubuntu18.04 is **Upgrade**
-- MySQL5.6.25 to MySQL5.6.30 is **Update**, MySQL5.6 to MySQL5.7 is **Upgrade**
+Get to know the differences between the terms **Update** and **Upgrade**([Extended reading](https://support.websoft9.com/docs/faq/tech-upgrade.html#update-vs-upgrade))
+For example:
+- Patching the operating system is **Updating**, while Ubuntu16.04 turns to Ubuntu18.04 means **Upgrading**
+- MySQL5.6.25 to MySQL5.6.30 means **Updating**, while MySQL5.6 to MySQL5.7 means **Upgrading**
 
-For Ghost maintenance, focus on the following two Update & Upgrade jobs
+Ghost maintenance includes the following two tasks:
 
-- Sytem update(Operating System and Running Environment) 
-- Ghost upgrade 
+- System updating(Operating System and Running Environment) 
+- Ghost upgrading
 
-## System Update
+## System Updating
 
-Run an update command to complete the system update:
+Run a command to complete the system updating:
 
 ``` shell
 #For Ubuntu&Debian
@@ -22,8 +23,26 @@ apt update && apt upgrade -y
 #For Centos&Redhat
 yum update -y --skip-broken
 ```
-> This deployment package is preconfigured with a scheduled task for automatic updates. If you want to remove the automatic update, please delete the corresponding Cron
+> This deployment package pre-configures a scheduled task for automatic updating. If you want to remove the automatic updating, please delete the corresponding Cron
 
 ## Ghost Upgrade
 
-Refer to the official docs: [Upgrading Ghost](https://www.ghost.com/upgrade.html)
+As Ghost official notes, to upgrade Ghost by upgrading node. Yet, this way does not apply when using Docker to install Ghost without deployment.
+
+Hence, take the following steps to upgrade Ghost:
+
+1. Make a [manual backup](/solution-backup.md#). Ensure the backup is successful.
+2. Log in the Cloud Server and run the following commands.
+   ```
+   #Stop and delete the current Ghost container
+   sudo docker stop ghost && sudo docker rm ghost
+
+   #Delete the local Ghost image
+   docker image rm ghost
+
+   #Restart container
+   cd /data/wwwroot/ghost && docker-compose up -d
+   ```
+3. Use local browser to visit Ghost and start upgrading.
+
+

@@ -1,14 +1,14 @@
 # Troubleshooting
 
-We collect the most common faults when of using Ghost for your reference:
+We collect the most common faults in using Ghost for your reference:
 
-> Instance troubleshooting is closely related to the Instance provider that is Cloud Platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html)
+> Most faults are closely related to the instance provider,cloud platforms. Provided you're sure the fault is caused by cloud platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html)
 
-#### How can I use the logs?
+#### How can I check the error logs?
 
 You can find the keywords **Failed** or **error** from the logs directory: `/data/logs`
 
-#### Ghost service can't start?
+#### Can't start Ghost service?
 
 Insufficient disk space and memory, incorrect configuration file may cause the failure to start the service. 
 
@@ -26,8 +26,6 @@ df -lh
 free -lh
 ```
 
-#### Error in Chrome when modify password?
+#### Failed to open default theme casper folder?
 
-This error is not attribute to Ghost server, once you have upgraded you local Chrome, it solved
-
-![chrome error of Ghost](https://libs.websoft9.com/Websoft9/DocsPicture/zh/ghost/ghost-chromeerror-websoft9.png)
+As the ghost official notes, Casper is part of the kernel and only the self-uploaded themes can be modified.

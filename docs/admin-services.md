@@ -1,6 +1,6 @@
 # Start or Stop the Services
 
-These commands you must know when you using the Ghost of Websoft9
+These commands are required when you use the Ghost of Websoft9. 
 
 ### Ghost
 

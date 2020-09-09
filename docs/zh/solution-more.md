@@ -53,4 +53,4 @@
 1. 完成 [SMTP 设置](/zh/solution-smtp.md)
 
 2. 打开 Ghost 登录页面，点击【Forgot】开始通过邮件找回密码
-  ![Ghost 找回密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-codeinjection-websoft9.png)
+  ![Ghost 找回密码](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-forgetpw-websoft9.png)

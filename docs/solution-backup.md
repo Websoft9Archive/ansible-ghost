@@ -6,51 +6,65 @@ sidebarDepth: 3
 
 ## Why
 
-Users with experience in Cloud Server operation and maintenance understand the truth: "IT systems can't maintain 100% stability for a long time. Any system may fail, but the probability of failure is different and the degree of harm is different."
+Users with experience in Cloud Server operation and maintenance understand the necessity of backup. It's impossible for IT systems to maintain 100% stability for a long time. The truth is that any system may fail, but only the probability of failure and the degree of harm differs.
 
-When system failure, we first seek the help of a professional to quickly repair and recovery it, but unfortunately, some failure cannot be solved smoothly or even in the expected time period.
+1. The work of several days has been deleted by mistake. How to restore it?
+2. Is it possible to recover the website after it was attacked by hackers?
+3. The content of the website has been changed into a mess. Could it be restored?
 
-Obviously, there is a backup is so important, it can guarantee that the system can be restored to the normal state through the existing backup file when the failure occurs, which means that the huge loss due to the unrecoverable can be avoided.
+When a failure occurs, we may first turn to a professional for help, but unfortunately, some failure cannot be solved as quickly as we expected, and even it's insoluble.
 
-> Must develop the habit of backup, there is no luck
+Obviously, a backup is necessary when comes to a failure. The existing backup file helps to repair the failed system, which means the irrecoverable loss can be avoided.
+
+> Remember to develop the habit of backup. It's a great and useful way to help solve failure.
 
 ## How
 
-From the specific backup object, due to the existence of four backup objects on the server: **operating system, environment software, database and application**, each object may have unpredictable failures that cannot be solved as expected.
+There are four objects on the server for us to back up,including  **operating system, software environment, database and applications**. Each object may have unpredictable failures that cannot be solved as expected.
 
-Based on the backup object, we believe that the following two backup measures are necessary:
+Considering the nature of backup object, we suggest to take the following two necessary backup measures:
 
-### Automation Backup for Instance
+### Automation Backups for Instance
 
-Automation Backups for Instance is using the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform, A snapshot is a full, read-only copy of a disk. You can take a snapshot of an OS or data disk to use as a backup, or to troubleshoot instance issues.
+To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform. A snapshot is a full, read-only copy of a disk, which records the data of the disk.You can take a snapshot of an OS or data disk as a backup, and to have a key recovery by it .
 
-```
-- Backup scope: All data on a Disk
-- Backup effect: Very Good
-- Backup frequency: Automatic backup per hour if you need
-- Recovery methond: One key recovery on Cloud platform
-- Skill requirement: Very easy 
-- Automation or Manual: Fully automated on backup strategy
-```
-
-Different Cloud Platform's snapshot settings slightly different, refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html)
-
-### Manual backup for application
-
-Manual backup for application is based on the **Exporting source code and database of application** to achieve a minimized backup scheme.
+View the following list to understand this kind of backup:
 
 ```
-- Backup scope: Source code and database of application
-- Backup effect: Good
-- Backup frequency: You can operate when you need
-- Recovery methond: Import
-- Skill requirement: Easy 
+- Backup scope: operating system, software environment, database and applications
+- Backup effect: great
+- Backup frequency: automatic backup per hour/day/week as you need
+- Recovery method: one key recovery on Cloud platform
+- Skill requirement: easy 
+- Automation or Manual: fully automated backup after setting strategy
+```
+
+Different Cloud Platform's snapshot settings slightly differ. please refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html)
+
+### Manual Backups for Applications
+
+Manual backups for applications is to achieve a minimized backup scheme by**Exporting source code and database of applications** .
+
+View the following list to understand this kind of backup
+
+```
+- Backup scope: database and applications
+- Backup effect: good
+- Backup frequency: at lest make a backup weekly and one backup retains 39 days
+- Recovery method: reimport
+- Skill requirement: very easy 
 - Automation: manual
 ```
-The general manual backup operation steps are as follows:
+The general steps to make a manual backup are as follows:
 
-1. Just compression and download the entire */data/wwwroot* directory by SFTP 
-2. Export LAMP's database by [phpMyAdmin](/admin-mysql.md)
+1. Just compress and download the entire */data/wwwroot* directory by SFTP.
+
+2. Log in the Ghost backend to export database.
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-exportalldatas-websoft9.png)
+
+3. Export database by phpMyAdmin.
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/phpmyadmin/phpmyadmin-export-websoft9.png)
-3. Put the source code file and database file in the same folder, named according to the date
-4. Backup completed
+
+4. Put application file and database file in the same folder, and name it according to the date.
+
+5. Complete a backup.
