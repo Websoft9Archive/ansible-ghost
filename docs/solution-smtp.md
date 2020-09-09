@@ -6,7 +6,7 @@ With a large number of users' practice and feedback, only one way is recommended
 
 Ghost uses [Nodemailer](https://github.com/nodemailer) as a mail sending module and presents Gmail, QQ, SendGrid and [other services for smtp](https://github.com/nodemailer/nodemailer/tree/0.7/#well-known-services-for-smtp).
 
-Taking using **SendGrid's SMTP Service** as an example to configure mail sending:
+Taking **SendGrid's SMTP Service** as an example, refer to the following steps to configure mail sending:
 
 1. Log in SendGrid console, and prepare your SMTP settings as the following sample
    ```
