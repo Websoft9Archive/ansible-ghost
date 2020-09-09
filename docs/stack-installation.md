@@ -46,7 +46,7 @@ If you have completed the Ghost deployment on Cloud Platform, just take the foll
 
 #### I can't visit Ghost when connecting IP address in browser.
 
-Your TCP:15672 of Security Group Rules is not allowed, so there no response from Chrome or Firefox
+Your TCP:15672 of Security Group Rules is not allowed, so there no response from Chrome or Firefox.
 
 #### How to deploy ghost in this kind of deployment scheme?
 

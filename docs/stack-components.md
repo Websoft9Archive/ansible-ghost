@@ -39,7 +39,7 @@ Docker daemon.json file: It is not created by default. If need it, create it in 
 
 ## Ports
 
-Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from outside Internet.
+Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.
 
 You can run the cmd `netstat -tunlp` to check all related ports.  
 The following are the ports you may use.

@@ -26,7 +26,8 @@ Considering the nature of backup object, we suggest to take the following two ne
 
 ### Automation Backups for Instance
 
-To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform. A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and to have a key recovery by using it .
+To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform.  
+A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and to have a key recovery by using it .
 
 View the following list to understand this kind of backup:
 
@@ -43,7 +44,7 @@ Different Cloud Platform's snapshot settings slightly differ. Please refer to [C
 
 ### Manual Backups for Applications
 
-Manual backups for applications is to achieve a minimized backup scheme by **Exporting source code and database of applications** .
+Manual backups for applications is to make a minimized backup by **Exporting source code and database of applications**.
 
 View the following list to understand this kind of backup
 

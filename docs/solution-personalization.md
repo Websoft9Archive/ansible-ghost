@@ -19,7 +19,7 @@ Theme is the main tool to personalize the interface. There is a default theme pr
   ![Ghost Theme Setting](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-setthemes-websoft9.png)
 
   3. Click【Upload a theme】and【Active】.
-  Theme uploaded stores in the directory */data/wwwroot/ghost/content/themes* on the server. You can modify the file included to make theme personalization at code level.
+  Theme uploaded is stored in the directory */data/wwwroot/ghost/content/themes* on the server. You can modify the file included to make theme personalization at code level.
 
 ## Languages
 
@@ -28,10 +28,11 @@ Default language is English and you can add translation files to your theme for 
 
 ## Code Injection
 
-Use code injection to insert third-party JavaScript code to Ghost website, such as Google analysis, etc. Once inserted, the code takes effect on each page.
+Use code injection to insert third-party JavaScript code to Ghost website, such as Google analysis, etc.  
+Once inserted, the code takes effect on each page.
 
 1. Login in Ghost and click【SETTING】>【Code Injection】in the left menu.
-![Ghost Code Injection](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-codeinjection-websoft9.png
+![Ghost Code Injection](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-codeinjection-websoft9.png)
 
 2. Copy the code needed and click 【Save】.
 
@@ -41,5 +42,5 @@ Ghost supports selling articles by subscription, which encourages entrepreneurs 
 
 1. Login in Ghost and click【SETTING】>【Labs 】in the left menu.
 
-2. Set Enable members, Connect to Stripe, Subscription pricing and so on.
+2. Set Enable members, Connect to Stripe, Subscription pricing and more.
   ![Ghost Subscription](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-setsubs-websoft9.png)  

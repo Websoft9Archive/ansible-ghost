@@ -16,7 +16,7 @@ For users with experience with cloud servers, to deploy by Image means "one-clic
 Websoft9 publishes [Ghost image](https://apps.websoft9.com/ghost) on major Cloud Platforms and there are three methods to deploy image. 
 
 * When **creating New Instance**, select the Ghost image as the system boot template.
-* When **subscribing Ghost** at Marketplace, the system will promote you to create a new instance for this image at the same time.
+* When **subscribing Ghost** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
 * When **re-installing OS** for you instance, you can replace the existing image with a Ghost image.
 
 ## Deploy by Script
@@ -27,6 +27,7 @@ Websoft9 provides the [Ghost ansible automation script](https://github.com/Webso
 
 ## Comparison
 
-No matter you **deploy by image** or **deploy by script**, the results are the same. So, what is the difference between the two deployment methods?
+No matter you **deploy by image** or **deploy by script**, the results are the same.  
+So, what is the difference between the two deployment methods?
 
 Suggest to read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison)

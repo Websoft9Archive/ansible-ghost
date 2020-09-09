@@ -2,7 +2,7 @@
 
 Before setting HTTPS, you have to complete [domain binding](/solution-more.md) and make sure you can visit Ghost by HTTP.
 
-Ghost deployment package has installed and pre-configure the SSL module of Web server and open Certificate Authority **[Let's Encrypt](https://letsencrypt.org/)**. Hence, except for the vhost configuration file, it does not need modifications to any other files in Nginx when setting HTTPS.
+Ghost deployment package includes pre-installed and pre-configured the SSL module of Web server and open Certificate Authority **[Let's Encrypt](https://letsencrypt.org/)**. Hence, except for the vhost configuration file, it doesn't need modifications to any other files in Nginx when setting HTTPS.
 
 ## Quick Start
 
