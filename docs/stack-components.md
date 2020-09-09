@@ -1,13 +1,13 @@
 # Parameters
 
-The Ghost deployment package contains a sequence software (referred to as "components") required for Ghost to run. The important information, such as the component name, installation directory path, configuration file path, port, version and so on, is listed below.
+The Ghost deployment package contains a sequence of software required for Ghost to run, referred to as "components". The important information, such as the component name, installation directory path, configuration file path, port, version and so on, is listed below.
 
 ## Path
 
 ### Ghost
 
 Ghost installation directory: */data/wwwroot/ghost/content*  
-Ghost configuration file: */data/wwwroot/ghost/config.production.json* 
+Ghost configuration file: */data/wwwroot/ghost/config.production.json*  
 Ghost container marshal file： */data/wwwroot/ghost/docker-compose.yml*
 
 ### Nginx
@@ -31,9 +31,9 @@ Visit *http://Internet IP:9090*
 
 ### Docker
 
-Docker root directory: */var/lib/docker* 
-Docker image directory: */var/lib/docker/image* 
-Docker daemon.json file： It is not created by default.If need it, create it in the directory * / etc / docker * 
+Docker root directory: */var/lib/docker*  
+Docker image directory: */var/lib/docker/image*   
+Docker daemon.json file: It is not created by default. If need it, create it in the directory * / etc / docker * 
 
 
 ## Ports
