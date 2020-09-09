@@ -4,7 +4,7 @@ home: false
 
 # Overview
 
-This documentation is provided by [Websoft9](https://www.websoft9.com/). It help users to acquire skills of Ghost Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
+This documentation is provided by [Websoft9](https://www.websoft9.com/). It helps users to acquire skills of Ghost Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
 
 [Ghost](https://ghost.org) is an open source blog system with simple, modern and beautiful interface and neat code. It aims at helping entrepreneurs who offer knowledge as business to sell knowledge to readers by subscription. The system is developed with Node.js. With front-end and back-end completely separated, it runs fast.
 
