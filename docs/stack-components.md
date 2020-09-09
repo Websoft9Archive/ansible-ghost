@@ -1,6 +1,7 @@
 # Parameters
 
-The Ghost deployment package contains a sequence of software required for Ghost to run, referred to as "components". The important information, such as the component name, installation directory path, configuration file path, port, version and so on, is listed below.
+The Ghost deployment package contains a sequence of software required for Ghost to run, referred to as "components".
+The important information, such as the component name, installation directory path, configuration file path, port, version and so on, is listed below.
 
 ## Path
 
