@@ -1,7 +1,7 @@
 # Parameters
 
 The Ghost deployment package contains a sequence of software required for Ghost to run, referred to as "components".  
-The important information, such as the component name, installation directory path, configuration file path, port, version and so on, is listed below.
+Below list the important information, such as the component name, installation directory path, configuration file path, port, version and etc.
 
 ## Path
 
@@ -39,9 +39,10 @@ Docker daemon.json file: It is not created by default. If need it, create it in 
 
 ## Ports
 
-You can control(open or close) ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from outside Internet.
+Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from outside Internet.
 
-You can run the cmd `netstat -tunlp` to check related ports. The following are the most useful ports:
+You can run the cmd `netstat -tunlp` to check all related ports.  
+The following are the ports you may use.
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
@@ -53,7 +54,7 @@ You can run the cmd `netstat -tunlp` to check related ports. The following are t
 
 ## Version
 
-You can see the version on product pages at Marketplace. However, after being deployed to your server, the components will be automatically updated, resulting in a certain change in the version number. Therefore, run the command on the server to view the exact version numbers.
+You can see the version on product pages at Marketplace. However, after being deployed to your server, the components will be updated automatically, resulting in a certain change in the version number. Therefore, run the command on the server to view the exact version numbers.
 
 ```shell
 # Check all components version

@@ -3,25 +3,25 @@
 **Deployment is to copy the pre-installed Ghost package online to your Cloud Server**. For example, after the user subscribes Ghost on the Cloud Platform, the Platform will automatically copy the Ghost to the corresponding Cloud Server.
 
 - If you have deployed the Ghost, go to [Initial Installation](/stack-installation.md) to complete the operation.
-- If Ghost is not deployed, first you need to deploy Ghost to your cloud server .
+- If not, first you need to deploy Ghost to your cloud server .
 
 We offer two scenarios for Ghost deployment and the results are the same. The process of deployment is automatic, please wait after starting deployment.
 
 ## Deploy by Image
 
-**Deploying by Image** means starting instance based on Ghost images, so as to obtain the same system environment as the image contains. **Ghost Image** provides OS and software environment needed for Ghost.
+**To deploy by Image** means starting instance based on Ghost images, so as to obtain the same system environment as the image contains. **Ghost Image** provides OS and software environment needed for Ghost.
 
 For users with experience with cloud servers, to deploy by Image means "one-click deployment".
 
-Websoft9 publishes [Ghost image](https://apps.websoft9.com/ghost) on major Cloud Platforms. Cloud Platforms offer the following three methods to deploy image. 
+Websoft9 publishes [Ghost image](https://apps.websoft9.com/ghost) on major Cloud Platforms and there are three methods to deploy image. 
 
-* When **creating New Instance** , select the Ghost image as the system boot template.
+* When **creating New Instance**, select the Ghost image as the system boot template.
 * When **subscribing Ghost** at Marketplace, the system will promote you to create a new instance for this image at the same time.
 * When **re-installing OS** for you instance, you can replace the existing image with a Ghost image.
 
 ## Deploy by Script
 
-**Deploying by Script** means running a script on your cloud instance to pull the pre-installed package online to your instance and configure it at the same time.
+**To deploy by Script** means running a script on your cloud instance to pull the pre-installed package online to your instance and configure it at the same time.
 
 Websoft9 provides the [Ghost ansible automation script](https://github.com/Websoft9/ansible-ghost) on GitHub. If you are familiar with Ansible, you can deploy the Ghost to the instance automatically.
 
