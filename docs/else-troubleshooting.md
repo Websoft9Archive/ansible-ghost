@@ -2,7 +2,7 @@
 
 We collect the most common faults in using Ghost for your reference:
 
-> Most faults are closely related to the instance provider,cloud platforms. Provided you're sure the fault is caused by cloud platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html)
+> Most faults are closely related to the instance provider, cloud platforms. Provided you're sure the fault is caused by cloud platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html).
 
 #### How can I check the error logs?
 

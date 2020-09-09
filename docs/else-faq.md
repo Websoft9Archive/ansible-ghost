@@ -60,4 +60,4 @@ Cloud platform refers to platform manufacturers that provide cloud computing ser
 
 #### What is the difference between Instance, Cloud Server, Virtual Machine, ECS, EC2, CVM, and VM?
 
-No difference. All refers to cloud servers. They are the different terminology used by different manufacturers.
+No difference. All refer to cloud servers. They are the different terminology used by different manufacturers.

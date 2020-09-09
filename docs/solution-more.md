@@ -1,14 +1,14 @@
 # More
 
-Each of the following solutions has been proven to be effective and we hope it can give you help.
+Each of the following solutions has been proved to be effective and we hope it can give you help.
 
 ## Configuration 
 
-Ghost official offers many configurations. Please refer to[Tutorials](https://ghost.org/tutorials/) and [FAQ](https://ghost.org/faq/) 
+Ghost official offers many configurations. Please refer to [Tutorials](https://ghost.org/tutorials/) and [FAQ](https://ghost.org/faq/).
 
 ## Domain Binding
 
-When there is only one website on the server, you can visit the website without binding domain. While considering the server security and subsequent maintenance, the **Domain Binding** step cannot be omitted.
+When there is only one website on the server, you can visit the website without binding domain. While considering the server security and subsequent maintenance, it would better to do the **Domain Binding**.
 
 Taking one website as an example, steps for domain binding are as follows:
 
@@ -50,7 +50,7 @@ There are two main measures to reset password.
 
 Try to retrieve your password through e-mail when forgetting it.
 
-1. Complete [SMTP setting](/solution-smtp.md)
+1. Complete [SMTP setting](/solution-smtp.md).
 
 2. Open tha login page of Ghost, and click 【Forgot】to retrieve the password.
   ![Ghost Password Reminder](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-forgetpw-websoft9.png)
