@@ -10,22 +10,23 @@ If you have completed the Ghost deployment on Cloud Platform, just take the foll
 
 ## Ghost Installation Wizard
 
-1. Use local Chrome or Firefox to access the URL *http://domain* or *http://Internet IP* and enter the frontend.
+1. Use local Chrome or Firefox to access the URL *http://domain* or *http://Internet IP*.  
+2. Enter the frontend.
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-bootpage-websoft9.png)
 
-2. Access *http://domain/ghost* 或 *http://Internet IP/ghost* to enter the backend.
+3. Access *http://domain/ghost* or *http://Internet IP/ghost* to enter the backend.
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-register001-websoft9.png)
 
-3. Create your account with the email address as the username. Don't set an excessively simple password.  
+4. Create your account with the email address as username. Don't set a too simple password.  
    ![]( https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-register002-websoft9.png )
 
-4. Use SFTP to connect your Cloud server, and modify the domain name into yours in the [Nginx vhost configuration file](/stack-components.md#nginx). (This is the necessary step for using domain.)
+5. Use SFTP to connect your Cloud server, and modify the domain name into yours in the [Nginx vhost configuration file](/stack-components.md#nginx). (This is the necessary step for using domain.)
    ```
     listen 80;
     server_name ghost.yourdomain.com;
    ```
 
-5. Use SFTP to connect the server. Modify the URL domain address into yours in [Ghost configuration file](/stack-components.md#ghost).
+6. Use SFTP to connect the server. Modify the URL domain address into yours in [Ghost configuration file](/stack-components.md#ghost).
    ```
    {
    "url": "http://ghost.yourdomain.com",
@@ -34,7 +35,7 @@ If you have completed the Ghost deployment on Cloud Platform, just take the foll
       "host": "0.0.0.0"
    },
    ```
-6. Run the related commands. Above settings work after restarting the service.
+7. Run the related commands. Above settings work after restarting the service.
    ```
    sudo systemctl restart nginx
    cd /data/wwwroot/ghost && sudo docker-compose up -d && sudo docker restart ghost
