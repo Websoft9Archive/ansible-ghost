@@ -25,7 +25,7 @@ MySQL configuration file: */etc/my.cnf*
 
 ### phpMyAdmin
 
-PhpMyAdmin is run in container, and the environment and ghost container is separated, which is stable and reliable.
+PhpMyAdmin is run in container, runtime and Ghost docker is separated, which is stable.
 
 Visit *http://Internet IP:9090*
 

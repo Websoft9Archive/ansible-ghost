@@ -18,8 +18,7 @@ Theme is the main tool to personalize the interface. There is a default theme. Y
 2. Click【Theme Marketplace】, find the theme you want and download the compressed file for the theme, such as a zip file.
   ![Ghost Theme Setting](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-setthemes-websoft9.png)
 
-3. Click【Upload a theme】and【Active】
-  Theme uploaded is stored in the directory */data/wwwroot/ghost/content/themes* on the server. You can modify the file included to make theme personalization at code level.
+3. Click【Upload a theme】and【Active】. Theme uploaded is stored in the directory */data/wwwroot/ghost/content/themes* on the server. You can modify the file included to make theme personalization at code level.
 
 ## Languages
 

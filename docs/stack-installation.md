@@ -1,6 +1,6 @@
 # Initial Installation
 
-If you have completed the Ghost deployment on Cloud Platform, just take the following steps to start a quick use.
+If you have completed the Ghost deployment, just take the following steps to start a quick use.
 
 ## Preparation
 

@@ -8,7 +8,7 @@ Ghost uses [Nodemailer](https://github.com/nodemailer) as a mail sending module 
 
 Taking **SendGrid's SMTP Service** as an example, refer to the following steps to configure mail sending:
 
-1. Log in SendGrid console, and prepare your SMTP settings as the following sample
+1. Log in SendGrid console, and prepare your SMTP settings as the following sample.
    ```
    SMTP host: smtp.sendgrid.net
    SMTP port: 25 or 587 for unencrypted/TLS email, 465 for SSL-encrypted email
