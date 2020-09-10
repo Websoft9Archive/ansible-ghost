@@ -15,7 +15,7 @@ It makes it simple to publish content online, grow an audience with email newsle
 
 ## Improve
 
-To take more users' needs into consideration, we're continuing to improve the documentation.  
+To take more users' need into consideration, we're continuing to improve the documentation.  
 If you have any good idea, feel free to **Edit this page on GitHub** to give us feedback, and we welcome you to fork this documentation on [GitHub](https://github.com/Websoft9/ansible-ghost).
 
 ## Scope
