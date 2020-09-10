@@ -5,7 +5,9 @@ If you have completed the Ghost deployment on Cloud Platform, just take the foll
 ## Preparation
 
 1. Get the **Internet IP** on your Cloud Console.
+
 2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:8161** is allowed.
+
 3. Make a domain resolution on your Cloud Console if you want to use domain for Ghost.
 
 ## Ghost Installation Wizard
