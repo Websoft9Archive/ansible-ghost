@@ -20,14 +20,13 @@ Obviously, a backup is necessary when comes to a failure. The existing backup fi
 
 ## How
 
-There are four objects on the server for us to back up, including  **operating system, software environment, database and applications**. Each object may have unpredictable failures that cannot be solved as expected.
+There are four objects on the server for us to back up, including  **operating system, runtime, database and applications**. Each object may have unpredictable failures that cannot be solved as expected.
 
-Considering the nature of backup object, we suggest to take the following two necessary backup measures:
+We suggest to take the following two necessary backup measures:
 
 ### Automation Backups for Instance
 
-To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform.  
-A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and to have a key recovery by using it .
+To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform. A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and to have a key recovery by using it .
 
 View the following list to understand this kind of backup:
 
@@ -40,7 +39,7 @@ View the following list to understand this kind of backup:
 - Automation or Manual: fully automated backup after setting strategy
 ```
 
-Different Cloud Platform's snapshot settings slightly differ. Please refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html)
+Different Cloud Platform's snapshot settings slightly differ. Refer to [Cloud platform backup solution](https://support.websoft9.com/docs/faq/tech-instance.html)
 
 ### Manual Backups for Applications
 
