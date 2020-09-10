@@ -8,7 +8,7 @@ The Ghost deployment package contains a sequence of software (referred to as "co
 
 Ghost installation directory: */data/wwwroot/ghost/content*  
 Ghost configuration file: */data/wwwroot/ghost/config.production.json*  
-Ghost Docker compose file： */data/wwwroot/ghost/docker-compose.yml*
+Ghost Docker compose file: */data/wwwroot/ghost/docker-compose.yml*
 
 ### Nginx
 

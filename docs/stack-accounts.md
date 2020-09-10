@@ -4,7 +4,7 @@ Use the **SSH** to connect your Server and run the command `sudo cat /credential
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
-Here are the required accounts and passwords for Ghost image installation and configuration
+Here are the required username and passwords for Ghost image installation and configuration.
 
 ## Ghost
 
@@ -13,7 +13,7 @@ Use local browser to visit *http://publicIPofyourInstance/ghost*, and set it on 
 ## MySQL
 
 * MySQL administrator username: `root`
-* MySQL administrator password: It stores in the file of your server */credentials/password.txt*  
+* MySQL administrator password: Get it from the file of your server */credentials/password.txt*. 
 
 ## Linux
 
