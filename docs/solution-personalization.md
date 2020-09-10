@@ -23,7 +23,7 @@ Theme is the main tool to personalize the interface. There is a default theme. Y
 
 ## Languages
 
-Default language is English and you can add translation files to your theme for any language.
+Default language is English and you can add translation files to your theme for any language.  
 Take the following steps:
 
 1. Use SSH or SFTP to login in, and find the directory, locales in themes folder.
@@ -31,7 +31,7 @@ Take the following steps:
 2. View json files to find your translation files.
 ![Ghost language setting](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-listalllanguages-websoft9.png)
 
-3. Log in the Ghost backend, click 【General】 and add the name of the translation file to 【Publication Language】
+3. Log in the Ghost backend, click 【General】 and add the translation file to 【Publication Language】
 ![Ghost Language Setting](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-setzhhans-websoft9.png)
 
 ## Code Injection
@@ -46,7 +46,7 @@ Once inserted, the code works on each page.
 
 ## Subscription
 
-Ghost supports selling articles by subscription, which encourages entrepreneurs who offer knowledge as business.
+Ghost supports subscription, which encourages entrepreneurs who offer knowledge as business.
 
 1. Login in Ghost and click【SETTING】>【Labs 】in the left menu.
 

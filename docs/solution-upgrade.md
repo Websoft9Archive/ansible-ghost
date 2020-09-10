@@ -9,7 +9,7 @@ For example:
 
 Ghost maintenance includes the following two tasks.
 
-- Update system (Operating System and Running Environment) 
+- Update system (Operating System and Runtime) 
 - Upgrade Ghost 
 
 ## Update System 
@@ -33,6 +33,7 @@ As Ghost official notes, to upgrade Ghost by upgrading node. Yet, this way does 
 Hence, take the following steps to upgrade Ghost:
 
 1. Make a [manual backup](/solution-backup.md#). Ensure the backup is successful.
+
 2. Log in the Cloud Server and run the following commands.
    ```
    #Stop and delete the current Ghost container

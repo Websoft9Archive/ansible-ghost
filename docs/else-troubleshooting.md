@@ -1,8 +1,8 @@
 # Troubleshooting
 
-We collect the most common faults in using Ghost for your reference:
+If you're having trouble with running Ghost, here is a quick guide to resolve most common problems.
 
-> Most faults are closely related to the instance provider, cloud platforms. Provided you're sure the fault is caused by cloud platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html).
+> Most problems are closely related to the instance provider, cloud platforms. Provided you're sure the problem is caused by cloud platform, refer to [Cloud Platform Documentation](https://support.websoft9.com/docs/faq/tech-instance.html).
 
 #### How can I check the error logs?
 

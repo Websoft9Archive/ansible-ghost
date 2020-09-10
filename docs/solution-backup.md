@@ -45,7 +45,7 @@ Different Cloud Platform's snapshot settings slightly differ. Refer to [Cloud pl
 
 Manual backups for applications is to make a minimized backup by **Exporting source code and database of applications**.
 
-View the following list to understand this kind of backup
+View the following list to understand this kind of backup.
 
 ```
 - Backup scope: database and applications
