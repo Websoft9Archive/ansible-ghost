@@ -17,9 +17,23 @@ Taking **SendGrid's SMTP Service** as an example, refer to the following steps t
    SMTP username: websoft9smtp
    SMTP password: #fdfwwBJ8f    
    ```
-2. Log in Ghost Console.
-3. Enter the SMTP settings.
-![Metabase SMTP](https://libs.websoft9.com/Websoft9/DocsPicture/en/metabase/metabase-smtp-websoft9.png)
-4. Click the **Test Connection**, and you can get the feedback *"no errors were..."* if SMTP is successful.
+2.修改 Ghost 配置文件 mail 相关配置段。
+   ```
+   "mail": {
+       "transport": "SMTP",
+       "options": {
+           "service": "sendgrid",
+           "auth": {
+               "user": "websoft9smtp",
+               "pass": "#fdfwwBJ8f"
+           }
+       }
+   }
+   ```
+3. 重启 Ghost 容器
+   ```
+   cd /data/wwwroot/ghost && docker-compose up -d && docker restart ghost
+   ```
+4. 登录 Ghost 后台，打开：【Manage】>【Staff】，通过【Invite People】 测试邮箱可用性
 
 More SMTP Service (Gmail, Hotmail, QQ mail, Yahoo mail, SendGrid and so on)  settings or Issues with SMTP, please refer to Websoft9's *[SMTP Guide](https://support.websoft9.com/docs/faq/tech-smtp.html)*.
