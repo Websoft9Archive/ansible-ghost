@@ -1,7 +1,6 @@
 # Parameters
 
-The Ghost deployment package contains a sequence of software required for Ghost to run, referred to as "components".  
-Below list the important information, such as the component name, installation directory path, configuration file path, port, version and etc.
+The Ghost deployment package contains a sequence of software (referred to as "components") required for Ghost to run. Below list the important information, such as the component name, installation directory path, configuration file path, port, version and etc.
 
 ## Path
 
@@ -9,7 +8,7 @@ Below list the important information, such as the component name, installation d
 
 Ghost installation directory: */data/wwwroot/ghost/content*  
 Ghost configuration file: */data/wwwroot/ghost/config.production.json*  
-Ghost container marshal file： */data/wwwroot/ghost/docker-compose.yml*
+Ghost Docker compose file： */data/wwwroot/ghost/docker-compose.yml*
 
 ### Nginx
 
@@ -34,14 +33,12 @@ Visit *http://Internet IP:9090*
 
 Docker root directory: */var/lib/docker*  
 Docker image directory: */var/lib/docker/image*   
-Docker daemon.json file: It is not created by default. If need it, create it in the directory * / etc / docker * 
+Docker daemon.json file: It is not created by default. If need it, create it in the directory */etc/docker* 
 
 
 ## Ports
 
-Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.
-
-You can run the cmd `netstat -tunlp` to check all related ports.  
+Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet. You can run the cmd `netstat -tunlp` to check all related ports.  
 The following are the ports you may use.
 
 | Name | Number | Use |  Necessity |
