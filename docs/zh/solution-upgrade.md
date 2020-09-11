@@ -24,7 +24,7 @@ yum update -y --skip-broken
 
 ## Ghost升级
 
-不部署采用 Docker 安装 Ghost，官方提供的通过 node 升级 Ghost 不适用。
+不部署采用 Docker 安装 Ghost，官方提供的通过 Node.js 升级 Ghost 不适用。
 
 请按照下面的流程完成升级：
 

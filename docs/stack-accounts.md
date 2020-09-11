@@ -8,7 +8,7 @@ Here are the required username and passwords for Ghost image installation and co
 
 ## Ghost
 
-Use local browser to visit *http://publicIPofyourInstance/ghost*, and set it on your own.
+Use local browser to access *http://InternetIP/ghost*, and set it on your own.
 
 ## MySQL
 

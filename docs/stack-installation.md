@@ -1,12 +1,12 @@
 # Initial Installation
 
-If you have completed the Ghost deployment, just take the following steps to start a quick use.
+If you have completed the Ghost deployment on Cloud Server, just take the following steps to start a quick use.
 
 ## Preparation
 
 1. Get the **Internet IP** on your Cloud Console.
 
-2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:8161** is allowed.
+2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:80** is allowed.
 
 3. Make a domain resolution on your Cloud Console if you want to use domain for Ghost.
 
@@ -28,7 +28,7 @@ If you have completed the Ghost deployment, just take the following steps to sta
     server_name ghost.yourdomain.com;
    ```
 
-6. Use SFTP to connect the server. Modify the URL domain address into yours in [Ghost configuration file](/stack-components.md#ghost).
+6. Use SFTP to connect the server and modify the URL domain address into yours in [Ghost configuration file](/stack-components.md#ghost).
    ```
    {
    "url": "http://ghost.yourdomain.com",
@@ -47,9 +47,9 @@ If you have completed the Ghost deployment, just take the following steps to sta
 
 ## Q&A
 
-#### I can't visit Ghost when connecting IP address in browser.
+#### Can't access Ghost when connect IP address in browser?
 
-Your TCP:15672 of Security Group Rules is not allowed, so there is no response from Chrome or Firefox.
+Your TCP:80 of Security Group Rules is not allowed, so there is no response from Chrome or Firefox.
 
 #### How to deploy ghost in this kind of deployment scheme?
 

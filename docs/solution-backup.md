@@ -28,7 +28,7 @@ We suggest to take the following two necessary backup measures:
 
 To make automation backups for Instance is to use the **Snapshot** or **Cloud Server Backup Service** on your Cloud Platform. A snapshot is a full, read-only copy of a disk, which records the data of the disk. You can take a snapshot of an OS or data disk as a backup, and to have a key recovery by using it .
 
-View the following list to understand this kind of backup:
+View the following list to understand this kind of backup.
 
 ```
 - Backup scope: operating system, software environment, database and applications
@@ -57,14 +57,14 @@ View the following list to understand this kind of backup.
 ```
 The general steps to make a manual backup are as follows:
 
-1. Compress and download the entire */data/wwwroot* directory by SFTP.
+1. compress and download the entire directory */data/wwwroot/ghost* by SFTP;
 
-2. Log in the Ghost backend to export database.
+2. log in the Ghost backend to export database;
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/ghost/ghost-exportalldatas-websoft9.png)
 
-3. Export database by phpMyAdmin.
+3. export database by phpMyAdmin;
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/phpmyadmin/phpmyadmin-export-websoft9.png)
 
-4. Put application file and database file in the same folder, and name it according to the date.
+4. put application file and database file in the same folder, and name it according to the date;
 
-5. Complete a backup.
+5. complete a backup.

@@ -20,5 +20,4 @@ If you have any good idea, feel free to **Edit this page on GitHub** to give us 
 
 ## Scope
 
-The image library provided by Websoft9 has published on the major Cloud Platforms.  
-To provide ease of use for global users, we offer English and Chinese documents about the image.
+We have published the image library on major Cloud Platforms and offered English and Chinese documents for guidance. Global users can get and use it with great convenience.

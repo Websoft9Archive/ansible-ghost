@@ -17,7 +17,7 @@ Nginx main configuration file: */etc/nginx/nginx.conf*
 Nginx logs file: */var/log/nginx*  
 Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
 
-### MYSQL
+### MySQL
 
 MySQL installation directory: */usr/local/mysql*  
 MySQL data directory: */data/mysql*  
@@ -39,6 +39,7 @@ Docker daemon.json file: It is not created by default. If need it, create it in 
 ## Ports
 
 Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet. You can run the cmd `netstat -tunlp` to check all related ports.  
+
 The following are the ports you may use.
 
 | Name | Number | Use |  Necessity |
@@ -51,7 +52,9 @@ The following are the ports you may use.
 
 ## Version
 
-You can see the version on product pages at Marketplace. However, after being deployed to your server, the components will be updated automatically, resulting in a certain change in the version number. Therefore, run the command on the server to view the exact version numbers.
+You can see the version on product pages at Marketplace. However, after being deployed to your server, the components will be updated automatically, resulting in a certain change in the version number.  
+
+Therefore, run the command on the server to view the exact version numbers.
 
 ```shell
 # Check all components version

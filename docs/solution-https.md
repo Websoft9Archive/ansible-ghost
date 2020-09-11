@@ -18,11 +18,11 @@ sudo certbot
 
 If you have applied for a certificate, complete the HTTPS configuration in just three steps:
 
-1. Upload your certificate, and file of certificate chain, and secret key to the directory: */data/cert*
+1. upload your certificate, and file of certificate chain, and secret key to the directory: */data/cert*;
 
-2. Open the vhost configuration file: */etc/nginx/conf.d/default.conf* 
+2. open the vhost configuration file: */etc/nginx/conf.d/default.conf* 
 
-3. Insert the **HTTPS template** into *server{  }*.
+3. insert the **HTTPS template** into *server{  }*.
    ``` text
    #-----HTTPS template start------------
    listen 443 ssl; 
@@ -35,7 +35,7 @@ If you have applied for a certificate, complete the HTTPS configuration in just 
    ssl_prefer_server_ciphers on;
    #-----HTTPS template end------------
    ```
-4. [Restart Nginx service](/admin-services.md).
+4. [restart Nginx service](/admin-services.md).
 
 ## Special Guide
 

@@ -16,11 +16,11 @@ No.
 
 #### If there is no domain name, can I deploy Ghost?
 
-Yes, access Ghost by *http://Internet IP:8161*
+Yes, access Ghost by *http://Internet IP*.
 
 #### How to set up domain access？
 
-First resolve the domain, then connect your Cloud Server to [bind the domain](/solution-more.md)
+First resolve the domain, then connect your Cloud Server to [bind the domain](/solution-more.md).
 
 #### What is the password for the database root user?
 
@@ -28,7 +28,7 @@ Get the password stored in the server related file: `/credentials/password.txt`
 
 #### Is there a web-base GUI database management tool?
 
-Yes, phpMyAdmin is included. Visit by *http://Internet IP:9090*
+Yes, phpMyAdmin is included. Visit by *http://Internet IP:9090*.
 
 #### How to ban outside access to phpMyAdmin?
 
@@ -36,16 +36,16 @@ Yes, phpMyAdmin is included. Visit by *http://Internet IP:9090*
 
  #### Can I change the directory of Ghost?
 
- Yes. Modify the persistence directory of the ghost docker compose file: */data/wwwroot/ghost/docker-compose.yml*
+ Yes. Modify the persistence directory of the ghost docker compose file: */data/wwwroot/ghost/docker-compose.yml*.
 
 #### How to change the permissions of filesystem?
 
 Change owner(group) or permissions as below:
 
 ```shell
-chown -R apache.apache /data/wwwroot
-find /data/wwwroot -type d -exec chmod 750 {} \;
-find /data/wwwroot -type f -exec chmod 640 {} \;
+chown -R root.root /data/wwwroot/ghost
+find /data/wwwroot/ghost -type d -exec chmod 750 {} \;
+find /data/wwwroot/ghost -type f -exec chmod 640 {} \;
 ```
 
 #### What's the difference between Deployment and Installation?

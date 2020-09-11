@@ -8,7 +8,7 @@ Ghost uses [Nodemailer](https://github.com/nodemailer) as a mail sending module 
 
 Taking **SendGrid's SMTP Service** as an example, refer to the following steps to configure mail sending:
 
-1. Log in SendGrid console, and prepare your SMTP settings as the following sample.
+1. log in SendGrid console, and prepare your SMTP settings as the following sample;
    ```
    SMTP host: smtp.sendgrid.net
    SMTP port: 25 or 587 for unencrypted/TLS email, 465 for SSL-encrypted email
@@ -17,7 +17,7 @@ Taking **SendGrid's SMTP Service** as an example, refer to the following steps t
    SMTP username: websoft9smtp
    SMTP password: #fdfwwBJ8f    
    ```
-2. Modify the related sections in configuration file mail.
+2. modify the related sections in configuration file mail;
    ```
    "mail": {
        "transport": "SMTP",
@@ -30,10 +30,10 @@ Taking **SendGrid's SMTP Service** as an example, refer to the following steps t
        }
    }
    ```
-3. Restart Ghost docker.
+3. restart Ghost docker;
    ```
    cd /data/wwwroot/ghost && docker-compose up -d && docker restart ghost
    ```
-4. Log in Ghost backend, open 【Manage】>【Staff】and test it by 【Invite People】.
+4. log in Ghost backend, open 【Manage】>【Staff】and test it by 【Invite People】.
 
 More SMTP Service (Gmail, Hotmail, QQ mail, Yahoo mail, SendGrid and so on)  settings or Issues with SMTP, please refer to Websoft9's *[SMTP Guide](https://support.websoft9.com/docs/faq/tech-smtp.html)*.

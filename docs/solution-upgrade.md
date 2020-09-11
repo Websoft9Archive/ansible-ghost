@@ -28,13 +28,13 @@ If you want to remove the automatic updating, please delete the corresponding Cr
 
 ## Upgrade Ghost 
 
-As Ghost official notes, to upgrade Ghost by upgrading node. Yet, this way does not apply when using Docker to install Ghost without deployment.
+As Ghost official notes, to upgrade Ghost by upgrading Node.js. Yet, this way does not apply when using Docker to install Ghost without deployment.
 
 Hence, take the following steps to upgrade Ghost:
 
-1. Make a [manual backup](/solution-backup.md#). Ensure the backup is successful.
+1. complete a valid [manual backup](/solution-backup.md#);
 
-2. Log in the Cloud Server and run the following commands.
+2. log in the Cloud Server and run the following commands;
    ```
    #Stop and delete the current Ghost container
    sudo docker stop ghost && sudo docker rm ghost
@@ -45,6 +45,6 @@ Hence, take the following steps to upgrade Ghost:
    #Restart container
    cd /data/wwwroot/ghost && docker-compose up -d
    ```
-3. Use local browser to visit Ghost and start upgrading.
+3. use local browser to access Ghost and start upgrading.
 
 
