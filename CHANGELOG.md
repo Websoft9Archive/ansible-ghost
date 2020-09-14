@@ -8,7 +8,7 @@
 
 ### Bug Fixes
 
-* 2020-02-14  
+* 2020-09-14  fixed /data/wwwroot/ghost/config.production.json permission to 0644
 
 ### Features
 
