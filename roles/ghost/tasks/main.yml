@@ -31,7 +31,7 @@
     chdir: /data/wwwroot/ghost
 
 #3 Configure
-- name: Permission settings
+- name: Permission settings and need restart docker
   shell: |
     chown -R ghost.ghost /data/wwwroot/ghost
     find /data/wwwroot/ghost -type d -exec chmod 750 {} \;
