@@ -68,7 +68,7 @@ Yes.
 
 #### How to install and view the latest release?
 
-Get the Ghost version from [Ghost repository](https://github.com/apache/incubator-ghost/releases), and modify the Ansible variable **[ghost_version](/roles/ansible/ghost/defaults/main.yml)** to change the Ghost version for this repository. 
+Get the Ghost version from [Ghost repository](https://github.com/apache/incubator-ghost/releases), and you don't need to change source code because ghost is installed based on Docker.
 
 #### Is the default password safe?
 
