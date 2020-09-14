@@ -4,7 +4,7 @@
 
 ## Introduction
 
-[English](/README.md) | [简体中文](zh/README.md)  
+[English](/README.md) | [简体中文](README-zh.md)  
 
 **Ghost Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Apache Ghost](https://ghost.apache.org/) based on Ansible and shell. It helps user install Ghost and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
