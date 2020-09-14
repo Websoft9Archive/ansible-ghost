@@ -37,6 +37,7 @@
     find /data/wwwroot/ghost -type d -exec chmod 750 {} \;
     find /data/wwwroot/ghost -not -type d -exec chmod 640 {} \;
     chmod 0644 /data/wwwroot/ghost/config.production.json
+    docker restart ghost
 
 #4 Verify
 - name: Check Ghost Version
