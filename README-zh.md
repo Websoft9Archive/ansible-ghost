@@ -20,15 +20,13 @@
 
 ## 组件
 
-包含的核心组件为：可选 Ghost2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+包含的核心组件为：Ghost, MySQL, Docker, Nginx, phpMyAdmin
 
 更多请见 [参数表](/docs/zh/stack-components.md)
 
 ## 本项目安装的是 Ghost 最新版吗？
 
-本项目通过[Ghost 官方仓库源](https://packagecloud.io/ghost/ghost-server/install)安装，每次安装均可保证为最新版本。
-
-版本号，请通过[官方下载](https://www.ghost.com/download.html)页面查看  
+本项目通过[Ghost 镜像](https://hub.docker.com/_/ghost)安装，每次安装均可保证为最新版本。
 
 我们会定期检查版本准确性，并测试此项目，以保证用户可以顺利安装所需的Ghost版本。  
 
