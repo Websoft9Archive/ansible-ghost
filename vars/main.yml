@@ -39,5 +39,5 @@ init_docker:
   ghost:
     service_after: "docker.service"
     compose_commands:
-      - sudo sed -i  's/\("password":."\).*/\1'"$new_password"'",/g'   config.json
+      - sudo sed -i  's/\("password":."\).*/\1'"$new_password"'",/g'  config.production2.json
       - sudo docker restart ghost
