@@ -29,10 +29,10 @@ mysql_users:
 
 # init passsword of database
 init_db: 
-    mysql:
-      admin: root
-      user: ["ghost"]
-      password: "123456"  
+  mysql:
+    admin: root
+    user: ["ghost"]
+    password: "123456"
   
 # init password of applications
 init_docker:
@@ -40,4 +40,4 @@ init_docker:
     service_after: "docker.service"
     compose_path: "/data/docker-compose.yml"
     compose_commands:
-      - 'sed -i "s/DB_ROOT_PASSWD=.*/DB_ROOT_PASSWD=$new_password/g" /data/ghost/docker-compose.yml'
+      - 'sed -i "s/DB_ROOT_PASSWD=.*/DB_ROOT_PASSWD=$new_password/g" /data/ghost/config.production.json'
