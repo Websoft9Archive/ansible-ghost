@@ -16,6 +16,6 @@
     - {role: role_mysql, tags: "role_mysql"}  
     - {role: role_docker, tags: "role_docker"}  
     - {role: ghost, tags: "ghost"}  
-    #- {role: role_init, tags: "role_init"}  
-    #- {role: role_preend, tags: "preend"}
-    #- {role: role_end, tags: "role_end"}
+    - {role: role_init, tags: "role_init"}  
+    - {role: role_preend, tags: "preend"}
+    - {role: role_end, tags: "role_end"}
