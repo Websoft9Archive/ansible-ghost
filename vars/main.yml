@@ -41,3 +41,4 @@ init_docker:
     compose_path: "/data/docker-compose.yml"
     compose_commands:
       - 'sed -i "s/DB_ROOT_PASSWD=.*/DB_ROOT_PASSWD=$new_password/g" /data/ghost/config.production.json'
+      - sudo docker restart ghost
