@@ -31,7 +31,7 @@ mysql_users:
 init_db: 
   mysql:
     admin: root
-    user: ["ghost"]
+    users: ["ghost"]
     password: "123456"
   
 # init password of applications
