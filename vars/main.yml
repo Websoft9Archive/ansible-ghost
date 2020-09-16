@@ -40,5 +40,5 @@ init_docker:
     service_after: "docker.service"
     commands:
       - sudo sed -i  's/\("password":."\).*/\1'"$new_password"'",/g'  /data/wwwroot/ghost/config.production.json
-      - sudo docker-compose up -f /data/wwwroot/ghost/docker-compose.yml -d
+      - sudo docker-compose -f /data/wwwroot/ghost/docker-compose.yml up -d
       - sudo docker restart ghost
