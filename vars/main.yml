@@ -24,7 +24,6 @@ mysql_databases:
  
 mysql_users:
  - name: ghost
-   host: localhost
    priv: 'ghost.*:ALL'
 
 # init passsword of database
