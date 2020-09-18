@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](README-zh.md)  
 
-**Ghost Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Apache Ghost](https://ghost.apache.org/) based on Ansible and shell. It helps user install Ghost and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+**Ghost Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Ghost](https://ghost.org/) based on Ansible and shell. It helps user install Ghost and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirement
 
@@ -19,7 +19,7 @@ System Requirement to install this repository are as following：
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
 | Server Configuration | vCPU no less than 1 core, Memory no less than  2 GIB, Storage no less than 10 GB, Bandwidth no less than 100M ||
 
-To learn more information, please view [Installation & Configuration](https://ghost.apache.org/installation.html).
+To learn more information, please view [Installation & Configuration](https://ghost.org/docs/setup/).
 
 ## Ecosystem
 
@@ -68,7 +68,7 @@ Yes.
 
 #### How to install and view the latest release?
 
-Get the Ghost version from [Ghost repository](https://github.com/apache/incubator-ghost/releases), and you don't need to change source code because ghost is installed based on Docker.
+Get the Ghost version from [Ghost repository](https://github.com/TryGhost/Ghost/releases), and you don't need to change source code because ghost is installed based on Docker.
 
 #### Is the default password safe?
 
