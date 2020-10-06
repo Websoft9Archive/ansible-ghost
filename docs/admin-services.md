@@ -8,6 +8,7 @@ These commands are required when you use the Ghost of Websoft9.
 sudo docker stop ghost
 sudo docker start ghost
 sudo docker restart ghost
+sudo docker stats ghost
 
 # you can use the following CMD to manage Ghost container
 sudo docker exec -it ghost /bin/bash
