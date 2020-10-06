@@ -19,7 +19,7 @@ Taking one website as an example, steps for binding domain are as follows:
     server_name ghost.yourdomain.com;
    ```
 
-3. use SFTP to connect the server, modify the URL domain address into yours in [Ghost configuration file](/stack-components.md#ghost);
+3. use SFTP to connect the server, modify the URL domain into yours in [Ghost configuration file](/stack-components.md#ghost);
    ```
    {
    "url": "http://ghost.yourdomain.com",
