@@ -10,6 +10,10 @@ Post 是文章的意思，每一篇博客文章即一个 Post；Page 是页面�
 
 在 Ghost 系统中，每一个新建的 Page，都需要在主题中有对应的模板文件与之匹配。
 
+#### Ghost 有哪些用户角色？
+
+参考官方文档 [Managing your team in Ghost](https://ghost.org/help/managing-your-team/)
+
 #### Ghost 是否支持对默认主题 casper 进行修改？
 
 不支持，只可以修改自上传的主题。
